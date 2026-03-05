@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE HORIZON | Luxury Travel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="travel_recommendation.html" class="logo">THE <span>HORIZON</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" style="display: none;">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <div class="nav-links">
+                <a href="travel_recommendation.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="nav-actions">
+                <form id="searchForm" class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search horizons..." aria-label="Search destinations">
+                    <button type="submit" class="btn-search">Search</button>
+                </form>
+                <button id="resetBtn" class="btn-reset">Reset</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="social-sidebar">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Twitter</a>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1920&q=80" alt="Mountain Lake Horizon">
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tagline">Curated Escape</span>
+                    <h1>Your Journey <br>Beyond Borders</h1>
+                    <p>Explore the most breathtaking destinations on Earth. From the serenity of hidden temples to the rhythm of vibrant cityscapes, let THE HORIZON guide your next great story.</p>
+                    <a href="results.html?keyword=country" class="btn-primary">Explore All Horizons</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="grid-title">
+                <div>
+                    <span style="color: var(--gold); letter-spacing: 5px; text-transform: uppercase; font-size: 0.8rem; display: block; margin-bottom: 10px;">Collection</span>
+                    <h2>Featured Destinations</h2>
+                </div>
+                <p style="max-width: 400px; font-size: 0.9rem; opacity: 0.7;">Every destination is a world of its own. We've selected these remarkable locations for their unique character and timeless beauty.</p>
+            </div>
+            
+            <div class="results-grid">
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383?auto=format&fit=crop&w=800&q=80" alt="Bora Bora Beach">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tropical Horizons</h3>
+                        <p>Immerse yourself in turquoise waters and white sand sanctuaries. Discover the ultimate beach escapes.</p>
+                        <a href="results.html?keyword=beach" class="btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">See Beaches</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=800&q=80" alt="Kyoto Temple">
+                    </div>
+                    <div class="card-content">
+                        <h3>Ancient Echoes</h3>
+                        <p>Walk through history. Explore majestic temples and sacred sites that have stood the test of centuries.</p>
+                        <a href="results.html?keyword=temple" class="btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">See Temples</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25?auto=format&fit=crop&w=800&q=80" alt="Sydney Opera House">
+                    </div>
+                    <div class="card-content">
+                        <h3>Modern Wonders</h3>
+                        <p>From Sydney to Tokyo, experience the architecture, culture, and energy of the world's most iconic countries.</p>
+                        <a href="results.html?keyword=country" class="btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">See Countries</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">THE <span>HORIZON</span></div>
+                    <p style="opacity: 0.6; font-size: 0.9rem; max-width: 300px;">A digital publication and travel concierge dedicated to the pursuit of extraordinary experiences.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <a href="travel_recommendation.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <a href="results.html?keyword=beach">Beaches</a>
+                    <a href="results.html?keyword=temple">Temples</a>
+                    <a href="results.html?keyword=country">Countries</a>
+                </div>
+            </div>
+            <div style="margin-top: 60px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; opacity: 0.5; text-align: center;">
+                &copy; 2026 THE HORIZON. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
